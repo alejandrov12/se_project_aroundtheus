@@ -3,3 +3,20 @@
   margin-top: 67px;
   margin-bottom: 60px;
 }
+
+.footer__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: 48px auto;
+    max-width: 282px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+}
