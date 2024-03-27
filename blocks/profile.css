@@ -1,10 +1,7 @@
 .profile {
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .profile__image {
@@ -17,11 +14,11 @@
 }
 
 .profile__title {
-  font-family: "Inter", sans-serif;
-  width: 380px;
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 380px;
   font-size: 42px;
   line-height: 48px;
-  font-weight: 500;
+  font-weight: 400;
   grid-area: title;
   margin: 0;
   text-overflow: ellipsis;
@@ -52,25 +49,24 @@
 }
 
 .profile__edit-button {
-  background: transparent url(../card-images/Edit\ Button.svg) center no-repeat;
+  background: transparent url(../card-images/pencil.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   align-self: center;
   padding: 0;
   margin-top: 5px;
   margin-left: 18px;
-  border: 0;
 }
 
 .profile__edit-button:hover {
-  opacity: 0.33;
+  opacity: 60%;
   cursor: pointer;
 }
 
 .profile__add-button {
-  background: transparent url(../card-images/Add\ Button.svg) center no-repeat;
+  background: transparent url(../card-images/plus.svg) center no-repeat;
   height: 50px;
   width: 150px;
   margin-left: auto;
@@ -80,7 +76,7 @@
 }
 
 .profile__add-button:hover {
-  opacity: 0.33;
+  opacity: 60%;
   cursor: pointer;
 }
 
@@ -95,14 +91,13 @@
     line-height: 27px;
     font-size: 22px;
     margin-top: 30px;
-    margin-left: 35px;
     max-width: 282px;
     text-align: center;
   }
 
   .profile__description {
     font-size: 14px;
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
     margin-top: 14px;
     line-height: 17px;
@@ -118,9 +113,9 @@
 
   .profile__add-button {
     margin-top: 36px;
-    width: 90%;
+    width: 88%;
     margin-right: 20px;
-    background-size: 100%;
+    background-size: 16px;
   }
 
   .profile__edit-button {
@@ -129,7 +124,7 @@
     margin-top: 24px;
     margin-left: 10px;
     margin-right: 0px;
-    background-size: 100%;
+    background-size: 7.5px;
   }
 
   .profile__image {
@@ -137,9 +132,28 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .card__list {
-    margin: 0 20px;
-    max-width: calc(100% - 40px);
+@media screen and (max-width: 900px) {
+  .profile__title {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 230px;
+  }
+  .profile {
+    margin: 0 auto;
+  }
+  .profile__description {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 230px;
+  }
+
+  .profile__edit-button {
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
   }
 }

@@ -2,19 +2,24 @@
   color: #545454;
   margin-top: 67px;
   margin-bottom: 60px;
+  margin-left: 200px;
 }
 
 .footer__description {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  margin: auto;
 }
 
 @media screen and (max-width: 480px) {
   .footer {
     margin: 48px auto 36px;
     max-width: 282px;
+  }
+
+  .footer__description {
     font-size: 14px;
     line-height: 17px;
   }
