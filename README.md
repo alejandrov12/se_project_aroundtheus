@@ -10,3 +10,11 @@
 - This project contains the Use of HTML and CSS ( so far).
 - I will attached the video of the project once the been fully accepted with the coding part.
 - Thank you reviewer in advance for the help and this project, it's been super chalinging and fun. Thank you for all the help.
+
+**GitHub-Link**
+
+- https://alejandrov12.github.io/se_project_aroundtheus/
+
+**Google Drive Video**
+
+- https://drive.google.com/file/d/1WfqAjOWx0sQ3n3xnhdNIOeCnoZwaiQWS/view?usp=sharing
