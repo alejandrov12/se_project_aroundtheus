@@ -1,0 +1,98 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  padding: 0 19px;
+}
+
+.modal__container {
+  position: relative;
+  padding: 36px;
+  width: 430px;
+  height: 330px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.modal__close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  width: 40px;
+  height: 40px;
+  background-image: url(../card-images/Close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.modal__close:hover {
+  opacity: 0.6;
+}
+
+.modal__heading {
+  color: black;
+  width: 330px;
+  height: 23px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 54px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.modal__title_button {
+  margin-bottom: 30px;
+  height: 28px;
+  border: none;
+  border-bottom: 1px solid rgb(84, 84, 84, 0.7);
+}
+
+.modal__description_button {
+  height: 28px;
+  margin-bottom: 48px;
+  border: none;
+  border-bottom: 1px solid rgb(84, 84, 84, 0.7);
+}
+
+.modal__button {
+  height: 50px;
+  border-radius: 2px;
+  color: white;
+  background-color: black;
+}
+
+.modal__button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .modal__container {
+    width: 282px;
+    height: 322px;
+  }
+
+  .modal__close {
+    width: 26px;
+    height: 26px;
+    bottom: calc(100% + 20px);
+    left: calc(100% + -33px);
+  }
+}
